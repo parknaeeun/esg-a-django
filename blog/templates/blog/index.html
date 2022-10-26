@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="ku">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Django</title>
 </head>
 <body>
     <h1>Django</h1>
+    <hr/>
+    {% for post in posts_list %}
+        <h2>{{ post.title }}</h2>
+        <h4>{{ post.created_at }}</h4>
+        <p>{{ p.content }}</p>
+    {% endfor %}
 </body>
 </html>
